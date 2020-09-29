@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="TestCSS.css" media="" onload="this.media='all'">
+        <script src="siteScripts.js" async="true"></script>
+        <title>VERB8M</title>
+    </head>
+
+    <body>
+        <div class="noselect">
+            <div class="title" style="height: 150px; background-image: linear-gradient(to bottom right, black, var(--grey));">
+                <div class="alignVert">
+                    <img src="v8mtxt.svg" height=72>
+                    <p id="mainsubtitle" style="font-size: 15px; vertical-align: top;">Home Page</p>
+                </div>
+            </div>
+
+
+            <!--page buttons-->
+            <a onclick="setpage3(document.getElementById('mainbit'))" class="topBar" style="left: calc(50% - 0px)"
+                ><div class="alignVert point"
+                    >Music
+                </div>
+            </a><a onclick="setpage2(document.getElementById('mainbit'))" class="topBar" style="left: calc(50% - 130px)"
+                ><div class="alignVert point"
+                    >Software
+                </div>
+            </a><a onclick="setpage1(document.getElementById('mainbit'))" class="topBar" style="left: calc(50% - 260px)"
+                ><div class="alignVert point"
+                    >Home
+                </div>
+            </a><a onclick="setpage4(document.getElementById('mainbit'))" class="topBar" style="left: calc(50% + 130px)"
+                ><div class="alignVert point"
+                    >Other
+                </div>
+            </a>
+        </div>
+
+        <div class="white" style="height: 20px;"></div>
+
+        <iframe class="content" id="mainbit" src="homepage.html"></iframe>
+        
+        <!--links-->
+        <iframe class="pageEnd" src="endLinks.html"></iframe>
+
+        <div class="white" style="height: 1px;"></div>
+    </body>
+</html>

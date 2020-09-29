@@ -1,0 +1,88 @@
+:root {
+    --black: #121214; /*almost but not quite black*/
+    --grey: #525252;
+
+    --blue-dark: #000470;
+    --blue-med: #1B4DAF;
+    --blue-light: #3EABFF;
+}
+
+*, html {
+    margin:0;
+    padding:0;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: Sans1;
+    src: url("ProgressORDIN.woff");
+}
+
+.title {
+    pointer-events: none;
+    width: 100%;
+    height: 200px;
+    background-color: var(--blue-med);
+    background-image: linear-gradient(to bottom right, var(--blue-med), var(--blue-dark));
+    color: whitesmoke;
+    font-size: 80px;
+    display: table;
+    text-align: center;
+}
+
+.alignVert {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.topBar {
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    background-color: whitesmoke;
+    color: var(--black);
+    font-size: 20px;
+    display: inline-table;
+    text-align: center;
+    text-decoration: none;
+}
+
+.pageEnd {
+    color: var(--grey);
+    width: 100%;
+    height: 200px;
+    font-size: 15px;
+    display: inline-table;
+    text-align: left;
+    border: none;
+}
+
+/* height: 1px; for whiteline */
+.white {
+    background-color: whitesmoke;
+    width: 100%;
+    color: var(--black);
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.content {
+    width: 100%;
+    height: 372px;
+    border: none;
+}
+
+.point {
+    cursor: pointer;
+}
