@@ -17,7 +17,7 @@ function setpage2(thisFrame) {
 function setpage3(thisFrame) {
     setTitle("Music");
     thisFrame.src = "music.html";
-    thisFrame.style.height = '372px';
+    thisFrame.style.height = '500px';
 }
 
 function setpage4(thisFrame) {
