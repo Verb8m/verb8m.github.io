@@ -86,3 +86,8 @@ body {
 .point {
     cursor: pointer;
 }
+
+.endLink {
+    text-decoration: none;
+    color: gray;
+}
